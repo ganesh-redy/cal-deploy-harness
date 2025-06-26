@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: tag_items___vault__
   become: yes
   tasks:
     - name: Install tools
