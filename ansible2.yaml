@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  vars:
+    image_name: ganesh6498/java1
+  tasks:
+    - name: Run Docker image
+      shell: |
+        docker run -d -p 5001:5000 {{ image_name }}
+
